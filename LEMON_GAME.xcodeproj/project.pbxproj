@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB8D56311653DBD50020D979 /* LEMON_GAME.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB8D56301653DBD50020D979 /* LEMON_GAME.1 */; };
-		DB8D56791653E4B60020D979 /* StaticGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB8D56781653E4B60020D979 /* StaticGraph.cpp */; };
+		DB8D56871653E82F0020D979 /* Adaptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB8D56371653DC540020D979 /* Adaptor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +32,13 @@
 		DB8D567A1653E4DB0020D979 /* FirstAnalysis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FirstAnalysis.cpp; sourceTree = "<group>"; };
 		DB8D567B1653E5160020D979 /* ChangeLGF.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChangeLGF.cpp; sourceTree = "<group>"; };
 		DB8D56811653E56F0020D979 /* EUREGIO_Analysis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EUREGIO_Analysis.cpp; sourceTree = "<group>"; };
+		DB8D56A21653EB0A0020D979 /* Heap_tester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Heap_tester.cpp; sourceTree = "<group>"; };
+		DB8D56A41653EB400020D979 /* ArgParser_Tester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArgParser_Tester.cpp; sourceTree = "<group>"; };
+		DB8D56A51653EB700020D979 /* Planarity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Planarity.cpp; sourceTree = "<group>"; };
+		DB8D56A61653EB8B0020D979 /* SpeedTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpeedTests.cpp; sourceTree = "<group>"; };
+		DB8D56A71653EBA30020D979 /* integerMapOutput.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = integerMapOutput.cpp; sourceTree = "<group>"; };
+		DB8D56A81653EBB60020D979 /* DegreeMap_on_Adaptor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DegreeMap_on_Adaptor.cpp; sourceTree = "<group>"; };
+		DB8D56A91653EC350020D979 /* NetworkSimplex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkSimplex.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +55,7 @@
 		DB8D561F1653DBD50020D979 = {
 			isa = PBXGroup;
 			children = (
+				DB8D56A01653EAF00020D979 /* Testing Classes */,
 				DB8D562D1653DBD50020D979 /* LEMON_GAME */,
 				DB8D562B1653DBD50020D979 /* Products */,
 			);
@@ -72,6 +80,20 @@
 				DB8D56301653DBD50020D979 /* LEMON_GAME.1 */,
 			);
 			path = LEMON_GAME;
+			sourceTree = "<group>";
+		};
+		DB8D56A01653EAF00020D979 /* Testing Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DB8D56A21653EB0A0020D979 /* Heap_tester.cpp */,
+				DB8D56A41653EB400020D979 /* ArgParser_Tester.cpp */,
+				DB8D56A51653EB700020D979 /* Planarity.cpp */,
+				DB8D56A61653EB8B0020D979 /* SpeedTests.cpp */,
+				DB8D56A71653EBA30020D979 /* integerMapOutput.cpp */,
+				DB8D56A81653EBB60020D979 /* DegreeMap_on_Adaptor.cpp */,
+				DB8D56A91653EC350020D979 /* NetworkSimplex.cpp */,
+			);
+			name = "Testing Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB8D56791653E4B60020D979 /* StaticGraph.cpp in Sources */,
+				DB8D56871653E82F0020D979 /* Adaptor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,9 +158,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -169,9 +191,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
