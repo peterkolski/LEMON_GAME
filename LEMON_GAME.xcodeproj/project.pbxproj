@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB3AF2601656651E00222D18 /* KlassenTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB3AF25E1656651E00222D18 /* KlassenTemplate.cpp */; };
 		DB8D56311653DBD50020D979 /* LEMON_GAME.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB8D56301653DBD50020D979 /* LEMON_GAME.1 */; };
-		DB8D56871653E82F0020D979 /* Adaptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB8D56371653DC540020D979 /* Adaptor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB3AF2591656509A00222D18 /* Vererbung_SubGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vererbung_SubGraph.cpp; path = src/Vererbung_SubGraph.cpp; sourceTree = SOURCE_ROOT; };
+		DB3AF25E1656651E00222D18 /* KlassenTemplate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KlassenTemplate.cpp; path = src/KlassenTemplate.cpp; sourceTree = SOURCE_ROOT; };
 		DB8D562A1653DBD50020D979 /* LEMON_GAME */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LEMON_GAME; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8D56301653DBD50020D979 /* LEMON_GAME.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LEMON_GAME.1; sourceTree = "<group>"; };
 		DB8D56371653DC540020D979 /* Adaptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Adaptor.cpp; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				DB8D567B1653E5160020D979 /* ChangeLGF.cpp */,
+				DB3AF2591656509A00222D18 /* Vererbung_SubGraph.cpp */,
+				DB3AF25E1656651E00222D18 /* KlassenTemplate.cpp */,
 				DB8D56781653E4B60020D979 /* StaticGraph.cpp */,
 				DB8D567A1653E4DB0020D979 /* FirstAnalysis.cpp */,
 				DB8D56811653E56F0020D979 /* EUREGIO_Analysis.cpp */,
@@ -147,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB8D56871653E82F0020D979 /* Adaptor.cpp in Sources */,
+				DB3AF2601656651E00222D18 /* KlassenTemplate.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
