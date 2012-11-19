@@ -10,9 +10,11 @@
 /* -------------------------------------------------------------------------------------
     Make a Class independen from Graph Class
  
- template <typename Graph>
- inline int countNodes(const Graph& g) {
- return _core_bits::CountNodesSelector<Graph>::count(g);
+ use: 
+ template < typename DGR>
+ typename DGR
+ typename DGR::template NodeMap < >
+ typename DGR::NodeIt
  }
  
  ------------------------------------------------------------------------------------- */
@@ -25,18 +27,22 @@ using namespace std;
 
 template < typename DGR>    class   outputClass {
 public:
-    DGR                 &mGraph;
-//    DGR::NodeMap<int>   mMap;
+    const DGR                             &mGraph;
+    /*  I want to use a type of my template type DGR. 
+        C++ requires to specify that DGR is a template type!
+     */
+    typename DGR::template NodeMap<int>   mMap;
+
     
-    outputClass( const DGR &graph)
-    : mGraph(graph)
-//    mMap(graph)
+    outputClass(const DGR &graph )
+    : mGraph(graph),
+    mMap(graph)
     {};
     
     void output(){
-//        for (DGR::NodeIt n( mGraph ); n!=INVALID; ++n) {
-//            std::cout << "value: " << mMap[ n ] << endl;
-//        }
+        for (typename DGR::NodeIt n( mGraph ); n!=INVALID; ++n) {
+            std::cout << mGraph.id( n ) << " value: " << mMap[ n ] << endl;
+        }
     }
 };
 
@@ -45,8 +51,16 @@ public:
 
 int main( void ){
     ListDigraph     g;
-    outputClass<ListDigraph>    out( g );
-    out.output();
+    FullDigraph     f(5);
+    
+    outputClass<ListDigraph>    outL( g );
+    outputClass<FullDigraph>    outF( f );
+    
+    g.addNode();
+    
+    outL.output();
+    cout << "Next Graph" << endl << endl;
+    outF.output();
 }
 
 
