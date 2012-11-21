@@ -25,18 +25,18 @@ using namespace std;
 
 template < typename DGR>    class   outputClass {
 public:
-    DGR                 &mGraph;
-//    DGR::NodeMap<int>   mMap;
+    const DGR                 &mGraph;
+    typename DGR::template NodeMap<int>   mMap;
     
-    outputClass( const DGR &graph)
-    : mGraph(graph)
-//    mMap(graph)
+    outputClass( const DGR &graph )
+    : mGraph(graph),
+    mMap(graph)
     {};
     
     void output(){
-//        for (DGR::NodeIt n( mGraph ); n!=INVALID; ++n) {
-//            std::cout << "value: " << mMap[ n ] << endl;
-//        }
+        for (typename DGR::NodeIt n( mGraph ); n!=INVALID; ++n) {
+            std::cout << "value: " << mMap[ n ] << endl;
+        }
     }
 };
 
@@ -46,7 +46,11 @@ public:
 int main( void ){
     ListDigraph     g;
     outputClass<ListDigraph>    out( g );
+    
+    g.addNode();
+    
     out.output();
+    
 }
 
 

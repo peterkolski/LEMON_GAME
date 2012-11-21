@@ -250,13 +250,19 @@ void benchmarkGraph(const GR &gr, int n, int m) {
 
 int main(int argc, char *argv[])
 {
+    int n, m;
   if (argc < 3) {
     cout << "Usage: " << argv[0] << " n m" << endl;
-    return -1;
+//    return -1;
+      n = 100000;
+      m = 1000000;
+      
+      
   }
-  
-  int n = atoi(argv[1]);
-  int m = atoi(argv[2]);
+  else{
+    n = atoi(argv[1]);
+    m = atoi(argv[2]);
+  }
   
   cout << "Benchmark tests on a random digraph (n = " << n
        << ", m = " << m << ")" << endl << endl;
