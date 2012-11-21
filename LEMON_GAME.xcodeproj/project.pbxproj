@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		DB3AF2591656509A00222D18 /* Vererbung_SubGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vererbung_SubGraph.cpp; path = src/Vererbung_SubGraph.cpp; sourceTree = SOURCE_ROOT; };
-		DB3AF25E1656651E00222D18 /* KlassenTemplate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KlassenTemplate.cpp; path = src/KlassenTemplate.cpp; sourceTree = SOURCE_ROOT; };
+		DB3AF25E1656651E00222D18 /* Template.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Template.cpp; path = src/Template.cpp; sourceTree = SOURCE_ROOT; };
 		DB691151165BB6E600241B05 /* Performance_SmartVsList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Performance_SmartVsList.cpp; path = src/Performance_SmartVsList.cpp; sourceTree = SOURCE_ROOT; };
 		DB8D562A1653DBD50020D979 /* LEMON_GAME */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LEMON_GAME; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8D56301653DBD50020D979 /* LEMON_GAME.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LEMON_GAME.1; sourceTree = "<group>"; };
@@ -43,6 +43,14 @@
 		DB8D56A81653EBB60020D979 /* DegreeMap_on_Adaptor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DegreeMap_on_Adaptor.cpp; sourceTree = "<group>"; };
 		DB8D56A91653EC350020D979 /* NetworkSimplex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkSimplex.cpp; sourceTree = "<group>"; };
 		DB934FF1165CD69F00DE52DC /* graph_benchmark.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graph_benchmark.cc; sourceTree = "<group>"; };
+		DB93500F165D3E0C00DE52DC /* main_LP_Demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main_LP_Demo.cpp; sourceTree = "<group>"; };
+		DB935010165D3E0C00DE52DC /* main_LP_Flow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main_LP_Flow.cpp; sourceTree = "<group>"; };
+		DB935011165D3E0C00DE52DC /* main_MIP_demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main_MIP_demo.cpp; sourceTree = "<group>"; };
+		DB935012165D3E0C00DE52DC /* main_Basic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main_Basic.cpp; sourceTree = "<group>"; };
+		DB935014165D3E3700DE52DC /* GraphCreator_Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphCreator_Test.cpp; sourceTree = "<group>"; };
+		DB93501B165D3EEB00DE52DC /* RangeCalculation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RangeCalculation.cpp; sourceTree = "<group>"; };
+		DB93501D165D3EFA00DE52DC /* Adaptor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Adaptor.cpp; sourceTree = "<group>"; };
+		DB93501E165D3F6100DE52DC /* NetSpx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetSpx.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,8 @@
 		DB8D561F1653DBD50020D979 = {
 			isa = PBXGroup;
 			children = (
+				DB935013165D3E1200DE52DC /* LP */,
+				DB935007165D3D8600DE52DC /* MinCostFlow */,
 				DB8D56A01653EAF00020D979 /* Testing Classes */,
 				DB8D562D1653DBD50020D979 /* LEMON_GAME */,
 				DB8D562B1653DBD50020D979 /* Products */,
@@ -78,7 +88,7 @@
 			children = (
 				DB8D567B1653E5160020D979 /* ChangeLGF.cpp */,
 				DB3AF2591656509A00222D18 /* Vererbung_SubGraph.cpp */,
-				DB3AF25E1656651E00222D18 /* KlassenTemplate.cpp */,
+				DB3AF25E1656651E00222D18 /* Template.cpp */,
 				DB691151165BB6E600241B05 /* Performance_SmartVsList.cpp */,
 				DB934FF1165CD69F00DE52DC /* graph_benchmark.cc */,
 				DB8D56781653E4B60020D979 /* StaticGraph.cpp */,
@@ -99,9 +109,31 @@
 				DB8D56A61653EB8B0020D979 /* SpeedTests.cpp */,
 				DB8D56A71653EBA30020D979 /* integerMapOutput.cpp */,
 				DB8D56A81653EBB60020D979 /* DegreeMap_on_Adaptor.cpp */,
-				DB8D56A91653EC350020D979 /* NetworkSimplex.cpp */,
 			);
 			name = "Testing Classes";
+			sourceTree = "<group>";
+		};
+		DB935007165D3D8600DE52DC /* MinCostFlow */ = {
+			isa = PBXGroup;
+			children = (
+				DB93501E165D3F6100DE52DC /* NetSpx.cpp */,
+				DB935014165D3E3700DE52DC /* GraphCreator_Test.cpp */,
+				DB8D56A91653EC350020D979 /* NetworkSimplex.cpp */,
+				DB93501B165D3EEB00DE52DC /* RangeCalculation.cpp */,
+				DB93501D165D3EFA00DE52DC /* Adaptor.cpp */,
+			);
+			name = MinCostFlow;
+			sourceTree = "<group>";
+		};
+		DB935013165D3E1200DE52DC /* LP */ = {
+			isa = PBXGroup;
+			children = (
+				DB93500F165D3E0C00DE52DC /* main_LP_Demo.cpp */,
+				DB935010165D3E0C00DE52DC /* main_LP_Flow.cpp */,
+				DB935011165D3E0C00DE52DC /* main_MIP_demo.cpp */,
+				DB935012165D3E0C00DE52DC /* main_Basic.cpp */,
+			);
+			name = LP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
