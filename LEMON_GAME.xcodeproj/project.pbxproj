@@ -42,7 +42,7 @@
 		DB8D56A71653EBA30020D979 /* integerMapOutput.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = integerMapOutput.cpp; sourceTree = "<group>"; };
 		DB8D56A81653EBB60020D979 /* DegreeMap_on_Adaptor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DegreeMap_on_Adaptor.cpp; sourceTree = "<group>"; };
 		DB8D56A91653EC350020D979 /* NetworkSimplex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkSimplex.cpp; sourceTree = "<group>"; };
-		DB934FF1165CD69F00DE52DC /* graph_benchmark.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graph_benchmark.cc; sourceTree = "<group>"; };
+		DB934FF1165CD69F00DE52DC /* graph_benchmark.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = graph_benchmark.cc; path = LEMON_GAME/graph_benchmark.cc; sourceTree = "<group>"; };
 		DB93500F165D3E0C00DE52DC /* main_LP_Demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main_LP_Demo.cpp; sourceTree = "<group>"; };
 		DB935010165D3E0C00DE52DC /* main_LP_Flow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main_LP_Flow.cpp; sourceTree = "<group>"; };
 		DB935011165D3E0C00DE52DC /* main_MIP_demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main_MIP_demo.cpp; sourceTree = "<group>"; };
@@ -71,6 +71,7 @@
 				DB935007165D3D8600DE52DC /* MinCostFlow */,
 				DB8D56A01653EAF00020D979 /* Testing Classes */,
 				DB8D562D1653DBD50020D979 /* LEMON_GAME */,
+				DB93501F165D403900DE52DC /* Benchmark */,
 				DB8D562B1653DBD50020D979 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,8 +90,6 @@
 				DB8D567B1653E5160020D979 /* ChangeLGF.cpp */,
 				DB3AF2591656509A00222D18 /* Vererbung_SubGraph.cpp */,
 				DB3AF25E1656651E00222D18 /* Template.cpp */,
-				DB691151165BB6E600241B05 /* Performance_SmartVsList.cpp */,
-				DB934FF1165CD69F00DE52DC /* graph_benchmark.cc */,
 				DB8D56781653E4B60020D979 /* StaticGraph.cpp */,
 				DB8D567A1653E4DB0020D979 /* FirstAnalysis.cpp */,
 				DB8D56811653E56F0020D979 /* EUREGIO_Analysis.cpp */,
@@ -134,6 +133,15 @@
 				DB935012165D3E0C00DE52DC /* main_Basic.cpp */,
 			);
 			name = LP;
+			sourceTree = "<group>";
+		};
+		DB93501F165D403900DE52DC /* Benchmark */ = {
+			isa = PBXGroup;
+			children = (
+				DB934FF1165CD69F00DE52DC /* graph_benchmark.cc */,
+				DB691151165BB6E600241B05 /* Performance_SmartVsList.cpp */,
+			);
+			name = Benchmark;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
