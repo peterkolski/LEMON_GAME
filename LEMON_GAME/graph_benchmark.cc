@@ -371,6 +371,30 @@ int main(int argc, char *argv[])
   cout << "StaticDigraph - Iteration" << endl;
   benchmarkGraph(stgr, n, m);
 #endif
-  
+    
+    ListDigraph::NodeMap<bool>      nMap( lgr1, true );
+    ListDigraph::ArcMap<bool>       aMap( lgr1, true );
+    SubDigraph<ListDigraph>         subGr( lgr1, nMap, aMap );
+
+    cout << countNodes( subGr) << endl;
+    cout << "SubDigraph of Listgraph - Iteration" << endl;
+    benchmarkGraph( subGr, n, m);
+
+    StaticDigraph::NodeMap<bool>      nMapS( stgr, true );
+    StaticDigraph::ArcMap<bool>       aMapS( stgr, true );
+    SubDigraph<StaticDigraph>         subGrS( stgr, nMapS, aMapS );
+    
+    cout << countNodes( subGrS ) << endl;
+    cout << "SubDigraph of StaticDigraph - Iteration" << endl;
+    benchmarkGraph( subGrS, n, m);
+
+    SmartDigraph::NodeMap<bool>      nMapSm( sgr1, true );
+    SmartDigraph::ArcMap<bool>       aMapSm( sgr1, true );
+    SubDigraph<SmartDigraph>         subGrSm( sgr1, nMapSm, aMapSm );
+    
+    cout << countNodes( subGrSm ) << endl;
+    cout << "SubDigraph of SmartDigraph - Iteration" << endl;
+    benchmarkGraph( subGrS, n, m);
+    
   return 0;
 }

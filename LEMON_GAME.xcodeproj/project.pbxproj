@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB47BBAC1665743E000EC18B /* Heap_tester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB8D56A21653EB0A0020D979 /* Heap_tester.cpp */; };
 		DB8D56311653DBD50020D979 /* LEMON_GAME.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB8D56301653DBD50020D979 /* LEMON_GAME.1 */; };
-		DB934FF5165D194100DE52DC /* Performance_SmartVsList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB691151165BB6E600241B05 /* Performance_SmartVsList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +27,7 @@
 /* Begin PBXFileReference section */
 		DB3AF2591656509A00222D18 /* Vererbung_SubGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vererbung_SubGraph.cpp; path = src/Vererbung_SubGraph.cpp; sourceTree = SOURCE_ROOT; };
 		DB3AF25E1656651E00222D18 /* Template.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Template.cpp; path = src/Template.cpp; sourceTree = SOURCE_ROOT; };
+		DB47BBA916657316000EC18B /* FibHeap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FibHeap.cpp; path = src/FibHeap.cpp; sourceTree = "<group>"; };
 		DB691151165BB6E600241B05 /* Performance_SmartVsList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Performance_SmartVsList.cpp; path = src/Performance_SmartVsList.cpp; sourceTree = SOURCE_ROOT; };
 		DB8D562A1653DBD50020D979 /* LEMON_GAME */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LEMON_GAME; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8D56301653DBD50020D979 /* LEMON_GAME.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LEMON_GAME.1; sourceTree = "<group>"; };
@@ -51,6 +52,8 @@
 		DB93501B165D3EEB00DE52DC /* RangeCalculation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RangeCalculation.cpp; sourceTree = "<group>"; };
 		DB93501D165D3EFA00DE52DC /* Adaptor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Adaptor.cpp; sourceTree = "<group>"; };
 		DB93501E165D3F6100DE52DC /* NetSpx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetSpx.cpp; sourceTree = "<group>"; };
+		DBA4C91516655D99002EE4F7 /* Perform_IterableBoolMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Perform_IterableBoolMap.cpp; path = src/Perform_IterableBoolMap.cpp; sourceTree = "<group>"; };
+		DBBC868C165EA733007484A3 /* Benchmark Results.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Benchmark Results.rtf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 				DB935013165D3E1200DE52DC /* LP */,
 				DB935007165D3D8600DE52DC /* MinCostFlow */,
 				DB8D56A01653EAF00020D979 /* Testing Classes */,
+				DBC395D2165FAB4C0042BB39 /* Template */,
 				DB8D562D1653DBD50020D979 /* LEMON_GAME */,
 				DB93501F165D403900DE52DC /* Benchmark */,
 				DB8D562B1653DBD50020D979 /* Products */,
@@ -89,7 +93,6 @@
 			children = (
 				DB8D567B1653E5160020D979 /* ChangeLGF.cpp */,
 				DB3AF2591656509A00222D18 /* Vererbung_SubGraph.cpp */,
-				DB3AF25E1656651E00222D18 /* Template.cpp */,
 				DB8D56781653E4B60020D979 /* StaticGraph.cpp */,
 				DB8D567A1653E4DB0020D979 /* FirstAnalysis.cpp */,
 				DB8D56811653E56F0020D979 /* EUREGIO_Analysis.cpp */,
@@ -103,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				DB8D56A21653EB0A0020D979 /* Heap_tester.cpp */,
+				DB47BBA916657316000EC18B /* FibHeap.cpp */,
 				DB8D56A41653EB400020D979 /* ArgParser_Tester.cpp */,
 				DB8D56A51653EB700020D979 /* Planarity.cpp */,
 				DB8D56A61653EB8B0020D979 /* SpeedTests.cpp */,
@@ -138,10 +142,20 @@
 		DB93501F165D403900DE52DC /* Benchmark */ = {
 			isa = PBXGroup;
 			children = (
+				DBA4C91516655D99002EE4F7 /* Perform_IterableBoolMap.cpp */,
+				DBBC868C165EA733007484A3 /* Benchmark Results.rtf */,
 				DB934FF1165CD69F00DE52DC /* graph_benchmark.cc */,
 				DB691151165BB6E600241B05 /* Performance_SmartVsList.cpp */,
 			);
 			name = Benchmark;
+			sourceTree = "<group>";
+		};
+		DBC395D2165FAB4C0042BB39 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				DB3AF25E1656651E00222D18 /* Template.cpp */,
+			);
+			name = Template;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB934FF5165D194100DE52DC /* Performance_SmartVsList.cpp in Sources */,
+				DB47BBAC1665743E000EC18B /* Heap_tester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +221,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -240,7 +254,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;

@@ -20,7 +20,7 @@ using namespace lemon;
 
 int main( void ){
 
-    int                         sysSize = 500000;
+    int                         sysSize = 100000;
     ListDigraph                 LG;
     SmartDigraph                SG;
     SmartDigraph::NodeMap<bool>     actNodes( SG, true );
@@ -60,6 +60,19 @@ int main( void ){
     }
     cout << "ListGraph iterations \t" << t.realTime() << endl;
 
+    // --- Checking a map value
+    ListDigraph::NodeMap<bool>          mBoolMapNd(LG, true);
+    ListDigraph::NodeMap<int>           mValueMap(LG, 1);
+    
+    t.restart();
+    for (ListDigraph::NodeIt n(LG); n!=INVALID; ++n) {
+        if (mValueMap[ n ] < 3){
+            mBoolMapNd[ n ] = false;
+            sum += LG.id( n );
+        }
+    }
+    cout << "ListGraph iterations with if & Map assignment \t" << t.realTime() << endl;
+    
     t.restart();
     for (FullDigraph::NodeIt n(FG); n!=INVALID; ++n) {
         sum += FG.id( n );
@@ -98,7 +111,7 @@ int main( void ){
     cout << "SubGraph deactivation \t" << t.realTime() << endl;
     
     // -------------------------------------
-    // --- Test of iteration speed
+    // --- Test of iteration speed after deletion
     
     t.restart();
     for (ListDigraph::NodeIt n(LG); n!=INVALID; ++n) {
@@ -106,6 +119,8 @@ int main( void ){
     }
     cout << "ListGraph iterations \t" << t.realTime() << endl;
 
+
+    
     t.restart();
     for (FullDigraph::NodeIt n(FG); n!=INVALID; ++n) {
         sum += FG.id( n );

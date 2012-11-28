@@ -42,7 +42,7 @@ int main(){
     
     Timer t(true);
 
-    f.resize( 10000 );
+    f.resize( 100 );
     mapFill( f, adapNdMap, true);               // never forget! Arcs without nodes don't work
     cout << "Arcs: " << f.arcNum() << endl;
     cout << "Build Time: " << t.realTime() << endl;
@@ -50,7 +50,7 @@ int main(){
     
     for (FullGraph::ArcIt a( f ); a!=INVALID; ++a) {
         cost[a] = rnd.integer( 100 );
-        if ( cost[ a ] < 5 ) {
+        if ( cost[ a ] < 10 ) {
             fAdap.enable( a );
         }
     }
@@ -66,18 +66,28 @@ int main(){
     BinHeap< int, FullGraph::ArcMap< int > >    myBinHeap( binHeapMap );
     FibHeap< int, FullGraph::ArcMap< int > >    myFibHeap( fibHeapMap );
 
+    
     t.restart();
     for (SubDigraph<FullGraph>::ArcIt a( fAdap ); a!=INVALID; ++a) {
         myBinHeap.push( a, cost[ a ]);
     }
     cout << "binHeap fill time: " << t.realTime() << " items: " << myBinHeap.size() << endl;
 
-    t.restart();
-//    for (SubDigraph<FullGraph>::ArcIt a( fAdap ); a!=INVALID; ++a) {
+    sleep(5);
+    
+//    // ------  Fibonacci Heap  ------
+//    t.restart();
+//    int i = 0;
+//    for (SubDigraph<FullGraph>::ArcIt a( fAdap ); a!=INVALID; ++a){
+//        cout << i++ << endl;
 //        myFibHeap.push( a, cost[ a ]);
 //    }
-//    cout << "fibHeap fill time: " << t.realTime() << endl;    
+//    cout << "fibHeap fill time: " << t.realTime() << endl;
+
     
+    
+    
+/*
     while ( myBinHeap.size() != 0 ) {
         cout << "item ID: " << f.id( myBinHeap.top() )
              << "\t value: " << cost[ myBinHeap.top() ] << endl;
@@ -89,5 +99,6 @@ int main(){
     }
     cout << "HeapTime: " << t.realTime() << endl;
     cout << "active arcs: " << countArcs( fAdap ) << endl;
-//    cout << "size: " << myBinHeap.size() << endl;
+    cout << "size: " << myBinHeap.size() << endl;
+ */
 }
