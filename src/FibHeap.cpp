@@ -12,6 +12,7 @@
 #include <lemon/fib_heap.h>
 
 #include <lemon/full_graph.h>
+#include <lemon/list_graph.h>
 #include <lemon/adaptors.h>
 #include <lemon/maps.h>
 #include <lemon/random.h>
@@ -30,45 +31,20 @@ using namespace lemon;
 using namespace std;
 
 int main(){
-    
-    FullGraph f;
+    FullGraph                   f(1000);
     FullGraph::ArcMap< int >    cost( f );
-    vector< int >               somethingToDo;
-    
-    FullGraph::NodeMap< bool >  adapNdMap( f, true );
-    FullGraph::ArcMap< bool >   adapArcMap ( f );
-    SubDigraph<FullGraph>       fAdap (f , adapNdMap, adapArcMap);
-    
-    Timer t(true);
-    
-    f.resize( 1000 );
-    mapFill( f, adapNdMap, true);               // never forget! Arcs without nodes don't work
-    cout << "Arcs: " << f.arcNum() << endl;
-    cout << "Build Time: " << t.realTime() << endl;
-    
+    FullGraph::ArcMap< int >    fibHeapMap( f, -1 );
+    FibHeap< int, FullGraph::ArcMap<int> >    myFibHeap( fibHeapMap );
     
     for (FullGraph::ArcIt a( f ); a!=INVALID; ++a) {
         cost[a] = rnd.integer( 100 );
-        if ( cost[ a ] < 1 ) {
-            fAdap.enable( a );
-        }
     }
     
-    cout << "Fill Time: " << t.realTime() << endl;
-    cout << "active arcs: " << countArcs( fAdap ) << endl;
+    // --- first
+    myFibHeap.push( f.arcFromId( 0 ), 3 );
     
-    
-    // --- Create the heap ---------------------
-    
-    FullGraph::ArcMap< int >    fibHeapMap( f );
-    FibHeap< int, FullGraph::ArcMap< int > >    myFibHeap( fibHeapMap );
-    
-    // ------  Fibonacci Heap  ------
-    t.restart();
-    int i = 0;
-    for (FullGraph::ArcIt a( f ); a!=INVALID; ++a){
-        cout << i++ << endl;
-        myFibHeap.push( a, cost[ a ]);
-    }
-    cout << "fibHeap fill time: " << t.realTime() << endl;
-  }
+//    // --- second
+//    for (FullGraph::ArcIt a( f ); a!=INVALID; ++a){
+//        myFibHeap.push( a, cost[ a ]);
+//    }
+}
