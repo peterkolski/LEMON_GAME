@@ -26,6 +26,12 @@ using namespace lemon;
         Bei den Features des Accumulators:
         tag::mean
         tag::variance
+        
+        Für Density (Histogramm):
+        tag::density::num_bins
+        tag::density::cache_size
+        -   Cache greift am Anfang diese Zahl an Elementen heraus, um daraus die
+            Bin-Größe und Aufteilung abzuschätzen
  */
 
 
