@@ -44,7 +44,6 @@ int main(){
     
     InDegMap< tpSubFull > inMap( fAdap );
     OutDegMap< tpSubFull> outMap( fAdap );
-//    AddMap< tpSubFull::NodeMap<<#typename V#>>, tpSubFull > degMap( inMap, outMap );
     
     digraphWriter( f )
     .nodeMap("InDegrees", inMap )
