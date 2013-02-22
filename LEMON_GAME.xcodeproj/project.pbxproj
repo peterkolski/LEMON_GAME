@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB73B7AC16D79555000F0DD8 /* Multiple_Arcs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB73B7AA16D79555000F0DD8 /* Multiple_Arcs.cpp */; };
 		DB8D56311653DBD50020D979 /* LEMON_GAME.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB8D56301653DBD50020D979 /* LEMON_GAME.1 */; };
-		DBFF4EA116D4354B0032F28E /* IterableMaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBFF4E9F16D4354B0032F28E /* IterableMaps.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +30,7 @@
 		DB47BBA916657316000EC18B /* FibHeap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FibHeap.cpp; path = src/FibHeap.cpp; sourceTree = "<group>"; };
 		DB47BBBE16662DB9000EC18B /* Memory Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "Memory Test.cpp"; path = "LEMON_GAME/Memory Test.cpp"; sourceTree = "<group>"; };
 		DB691151165BB6E600241B05 /* Performance_SmartVsList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Performance_SmartVsList.cpp; path = src/Performance_SmartVsList.cpp; sourceTree = SOURCE_ROOT; };
+		DB73B7AA16D79555000F0DD8 /* Multiple_Arcs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Multiple_Arcs.cpp; sourceTree = "<group>"; };
 		DB8729C016A46E3700459368 /* LEMON_GCD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LEMON_GCD.cpp; sourceTree = "<group>"; };
 		DB8729C116A46E3700459368 /* LEMON_GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEMON_GCD.h; sourceTree = "<group>"; };
 		DB8D562A1653DBD50020D979 /* LEMON_GAME */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LEMON_GAME; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +120,7 @@
 				DB8D56371653DC540020D979 /* Adaptor.cpp */,
 				DB8D56301653DBD50020D979 /* LEMON_GAME.1 */,
 				DBFF4E9F16D4354B0032F28E /* IterableMaps.cpp */,
+				DB73B7AA16D79555000F0DD8 /* Multiple_Arcs.cpp */,
 			);
 			path = LEMON_GAME;
 			sourceTree = "<group>";
@@ -241,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBFF4EA116D4354B0032F28E /* IterableMaps.cpp in Sources */,
+				DB73B7AC16D79555000F0DD8 /* Multiple_Arcs.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
