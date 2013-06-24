@@ -2,7 +2,7 @@
 //  main_Demo.cpp
 //  MinCostFlow_LEMON
 //
-//  Created by Peter A. Kolski on 08.07.11.
+//  Created by Peter A. Kolski (BildPeter Visuals) A. Kolski on 08.07.11.
 //  Copyright 2011 BildPeter Visuals. All rights reserved.
 //
 

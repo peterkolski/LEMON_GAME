@@ -2,7 +2,7 @@
 //  Dijkstra_test.cpp
 //  LEMON_GAME
 //
-//  Created by Peter on 23.02.13.
+//  Created by Peter A. Kolski (BildPeter Visuals) on 23.02.13.
 //  Copyright (c) 2013 Peter A. Kolski. All rights reserved.
 //
 

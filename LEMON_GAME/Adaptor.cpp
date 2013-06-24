@@ -1,5 +1,5 @@
 //
-//  Created by Peter A. Kolski on 21.10.11.
+//  Created by Peter A. Kolski (BildPeter Visuals) A. Kolski on 21.10.11.
 //  Copyright 2011 BildPeter Visuals. All rights reserved.
 //
 

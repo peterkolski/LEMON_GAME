@@ -2,7 +2,7 @@
 //  MarkusBeispiel.cpp
 //  LEMON_GAME
 //
-//  Created by Peter A. Kolski on 19.02.13.
+//  Created by Peter A. Kolski (BildPeter Visuals) A. Kolski on 19.02.13.
 //  Copyright (c) 2013 Peter A. Kolski. All rights reserved.
 //
 

@@ -221,7 +221,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Peter A. Kolski";
+				ORGANIZATIONNAME = "Peter A. Kolski (BildPeter Visuals)";
 			};
 			buildConfigurationList = DB8D56241653DBD50020D979 /* Build configuration list for PBXProject "LEMON_GAME" */;
 			compatibilityVersion = "Xcode 3.2";

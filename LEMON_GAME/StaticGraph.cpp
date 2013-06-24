@@ -2,7 +2,7 @@
 //  StaticGraph.cpp
 //  LemonGame
 //
-//  Created by BildPeter Visuals on 09.11.11.
+//  Created by Peter A. Kolski  (BildPeter Visuals) on 09.11.11.
 //  Copyright (c) 2011 BildPeter Visuals. All rights reserved.
 //
 

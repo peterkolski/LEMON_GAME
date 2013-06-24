@@ -2,7 +2,7 @@
 //  main.cpp
 //  EUREGIO_Analysis
 //
-//  Created by Peter A. Kolski on 25.11.11.
+//  Created by Peter A. Kolski (BildPeter Visuals) A. Kolski on 25.11.11.
 //  Copyright (c) 2011 BildPeter Visuals. All rights reserved.
 //
 

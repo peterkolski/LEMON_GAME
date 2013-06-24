@@ -2,7 +2,7 @@
 //  RangeCalculation.cpp
 //  MinCostFlow_Milk
 //
-//  Created by Peter A. Kolski on 13.08.11.
+//  Created by Peter A. Kolski (BildPeter Visuals) A. Kolski on 13.08.11.
 //  Copyright 2011 BildPeter Visuals. All rights reserved.
 //
 

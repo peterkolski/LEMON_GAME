@@ -2,7 +2,7 @@
 //  Boost_Histogramm.cpp
 //  LEMON_GAME
 //
-//  Created by Peter on 30.11.12.
+//  Created by Peter A. Kolski (BildPeter Visuals) on 30.11.12.
 //  Copyright (c) 2012 Peter A. Kolski. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  LEMON_GCD.cpp
 //  LEMON_GAME
 //
-//  Created by Peter on 14.01.13.
+//  Created by Peter A. Kolski (BildPeter Visuals) on 14.01.13.
 //  Copyright (c) 2013 Peter A. Kolski. All rights reserved.
 //
 

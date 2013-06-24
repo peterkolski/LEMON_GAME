@@ -2,8 +2,8 @@
 //  ArgParser_Tester.cpp
 //  MinimalNetGet
 //
-//  Created by BildPeter Visuals on 14.02.12.
-//  Copyright (c) 2012 BildPeter Visuals. All rights reserved.
+//  Created by Peter A. Kolski  (BildPeter Visuals) on 14.02.12.
+//  Copyright (c) 2012 Peter A. Kolski. All rights reserved.
 //
 
 #include <iostream>
